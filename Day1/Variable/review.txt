@@ -12,7 +12,7 @@
      }
  }
  
- 3. Cognitive complexity is 16, reduced to 7
+ 3. Cognitive complexity is 16, reduced to 7    Answer-6
  public long Fibonacci(int n)
  {
      if (n >= 50)
