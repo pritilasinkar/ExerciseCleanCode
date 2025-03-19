@@ -1,0 +1,41 @@
+using System;
+
+public class NotificationService
+{
+    private notificationChannel;
+    private message;
+    public NotificationService(iNotificationProcessor notificationProcessor)
+	{
+        this.notificationChannel = notificationProcessor;
+	}
+    public void SendNotification(iNotificationProcessor notificationProcessor,string message, string Title)
+    {
+
+    }
+}
+
+public interface  iNotificationProcessor
+{
+    public void ProcessNotification(NotificationRequest request);
+}
+
+public class EmailNotificationProcessor : iNotificationProcessor
+{
+    public void ProcessNotification(NotificationRequest request)
+    {
+    }
+}
+
+public class SmsNotificationProcessor : iNotificationProcessor
+{
+     public void ProcessNotification(NotificationRequest request)
+    {
+    }
+}
+
+public class PushNotificationProcessor : NotificationProcessor
+{
+     public void ProcessNotification(NotificationRequest request)
+    {
+    }
+}
